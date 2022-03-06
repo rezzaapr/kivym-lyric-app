@@ -1,0 +1,131 @@
+#:import utils kivy.utils
+MDFloatLayout:
+    md_bg_color:utils.get_color_from_hex('#14141b')
+    MDLabel:
+        text:'Detect Song'
+        pos_hint:{'center_x':.53,'center_y':.93}
+        font_name:'fonts/open.ttf'
+        font_size:'25sp'
+    MDLabel:
+        text:'Here you can find the lyric song\njust type a part of lyric song'
+        pos_hint:{'center_x':.53,'center_y':.87}
+        font_name:'fonts/anon.ttf'
+        font_size:'10sp'
+        text_color:utils.get_color_from_hex('#bdc3c7a1')
+        theme_text_color:"Custom"
+    MDFloatLayout:
+        size_hint:.90,.08
+        pos_hint:{'center_x':.5,'center_y':.76}
+        radius: [25, 25, 25, 25]
+        md_bg_color:utils.get_color_from_hex('#3A3F3B')
+        TextInput:
+            size_hint:.8,.7
+            hint_text:'Part of Song Lyrics'
+            radius: [20, 20, 20, 20]
+            pos_hint:{'center_x':.45,'center_y':.5}
+            foreground_color: 1,1,1,1
+            cursor_color:utils.get_color_from_hex('#ffffff')
+            cursor_width:"2sp"
+            color:
+            background_color: 0,0,0,0
+
+        MDIconButton:
+            icon: "magnify"
+            pos_hint: {'center_x':.90,"center_y": .5}
+            theme_text_color: "Hint"
+    MDLabel:
+        text:'RECENTLY SEARCH'
+        pos_hint:{'center_x':.56,'center_y':.68}
+        font_name:'fonts/open.ttf'
+        font_size:'11sp'
+    MDIconButton:
+        icon: 'arrow-right-bold-circle-outline'
+        pos_hint:{'center_x':.38,'center_y':.68}
+    MySwiper:
+        MDFloatLayout:
+            md_bg_color:utils.get_color_from_hex('#14141b')
+            size_hint:1,.38
+            pos_hint: {'center_x':.5,"center_y": .47}
+            MDCard:
+                md_bg_color:utils.get_color_from_hex('#14141b0')
+                size_hint:.9,.5
+                pos_hint: {'center_x':.5,"center_y": .55}
+                FitImage:
+                    source:"img/nevermind.jpg"
+                    size_hint:1,1
+                    pos_hint: {'center_x':.5,"center_y": .67}
+                    radius: [10, 10, 10, 10, ]
+            MDLabel:
+                text:'Nirvana'
+                pos_hint:{'center_x':.57,'center_y':.3}
+                font_name:'fonts/chee.ttf'
+                font_size:'16sp'
+                theme_text_color: "Custom"
+                text_color:utils.get_color_from_hex('#bdc3c7')
+            MDLabel:
+                text:'Something in the way'
+                pos_hint:{'center_x':.57,'center_y':.23}
+                font_name:'fonts/open.ttf'
+                font_size:'11sp'
+                theme_text_color: "Custom"
+                text_color:utils.get_color_from_hex('#bdc3c7a1')
+        MDFloatLayout:
+            md_bg_color:utils.get_color_from_hex('#14141b')
+            size_hint:1,.38
+            pos_hint: {'center_x':.5,"center_y": .47}
+            MDCard:
+                md_bg_color:utils.get_color_from_hex('#14141b0')
+                size_hint:.9,.5
+                pos_hint: {'center_x':.5,"center_y": .55}
+                FitImage:
+                    source:"img/pearl.jpg"
+                    size_hint:1,1
+                    pos_hint: {'center_x':.5,"center_y": .67}
+                    radius: [10, 10, 10, 10, ]
+            MDLabel:
+                text:'Pearl Jam'
+                pos_hint:{'center_x':.57,'center_y':.3}
+                font_name:'fonts/chee.ttf'
+                font_size:'16sp'
+                theme_text_color: "Custom"
+                text_color:utils.get_color_from_hex('#bdc3c7')
+            MDLabel:
+                text:'Release'
+                pos_hint:{'center_x':.57,'center_y':.23}
+                font_name:'fonts/open.ttf'
+                font_size:'11sp'
+                theme_text_color: "Custom"
+                text_color:utils.get_color_from_hex('#bdc3c7a1')
+    MDFloatLayout:
+        md_bg_color:utils.get_color_from_hex('#14141b0')
+        size_hint:1,.3
+        MDCard:
+            md_bg_color:utils.get_color_from_hex('#14141b0')
+            size_hint:.12,.2
+            pos_hint: {'center_x':.1,"center_y": .55}
+            FitImage:
+                source:"img/pearl.jpg"
+                size_hint:1,1
+                pos_hint: {'center_x':.5,"center_y": .67}
+                radius: [10, 10, 10, 10, ]
+        MDLabel:
+            text:'Popular Search'
+            pos_hint:{'center_x':.56,"center_y": .8}
+            font_size:'20sp'
+            font_name:'fonts/chee.ttf'
+        MDFloatLayout:
+            md_bg_color:utils.get_color_from_hex('#14141b0')
+            size_hint:.7,.3
+            pos_hint: {'center_x':.56,"center_y": .55}
+            MDLabel:
+                text:'pearl Jam'
+                pos_hint: {'center_x':.47,"center_y": .63}
+                font_name:'fonts/chee.ttf'
+                font_size:'15sp'
+            MDLabel:
+                text:'Release'
+                pos_hint: {'center_x':.47,"center_y": .4}
+                font_name:'fonts/open.ttf'
+                font_size:'10sp'
+            
+                
